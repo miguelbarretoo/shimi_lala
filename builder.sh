@@ -14,7 +14,7 @@ git config --global user.name NexusBR-odessa
 git config --global user.email miguel03barreto@gmail.com
 
 # Clone source
-git clone https://github.com/Ats0c/UN1CA_y2slte --recurse-submodules
+git clone https://github.com/At30c/UN1CA_y2slte.git --recurse-submodules
 
 # Remove sudo references:
 sed -i '104,111d' scripts/extract_fw.sh
