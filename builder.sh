@@ -1,5 +1,5 @@
 # Define device (change if necessary)
-DEVICE=c2s
+DEVICE=${1:-c2s}
 
 # Update repos
 sudo apt update
