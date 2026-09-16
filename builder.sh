@@ -18,7 +18,7 @@ git config --global user.name miguelbarretoo
 git config --global user.email miguel03barreto@gmail.com
 
 # Clone source
-git clone https://github.com/At30c/UN1CA_y2slte.git -b seventeen --recurse-submodules
+git clone https://github.com/At30c/UN1CA_y2slte.git --recurse-submodules
 
 # Remove sudo references:
 cd UN1CA_y2slte
