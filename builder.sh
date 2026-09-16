@@ -23,8 +23,9 @@ git clone https://github.com/At30c/UN1CA_y2slte.git -b seventeen --recurse-submo
 
 # Remove sudo references:
 cd UN1CA_y2slte
-sed -i '104,111d' scripts/extract_fw.sh
-sed -i '13,20d' platform/exynos990/patches/tethering_legacy/customize.sh
+sed -i '/if ! sudo -n -v &> \/dev\/null; then/,/^        fi$/d' scripts/extract_fw.sh
+sed -i '/if ! sudo -n -v &> \/dev\/null; then/,/^fi$/d' platform/exynos990/patches/tethering_legacy/customize.sh
+sed -i '/if ! sudo -n -v &> \/dev\/null && ! sudo -v; then/,/^    fi$/d' platform/exynos990/patches/__desixtification/customize.sh
 
 # Download S24+ OneUI 9.0 FW
 mkdir -p out/odin
