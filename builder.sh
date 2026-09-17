@@ -10,7 +10,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 wget https://raw.githubusercontent.com/kdrag0n/kramflash/refs/heads/master/mkbootimg.py && sudo ln -sf $(pwd)/mkbootimg.py /usr/bin/mkbootimg && chmod +x /usr/bin/mkbootimg
 sudo modprobe erofs f2fs
-pip3 install gdown
+pip3 install gdown --break-system-packages
 
 # setup git account
 git config --global user.name miguelbarretoo
