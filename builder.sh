@@ -30,9 +30,9 @@ sed -i '/if ! sudo -n -v &> \/dev\/null && ! sudo -v; then/,/^    fi$/d' platfor
 # Download S24+ OneUI 9.0 FW
 mkdir -p out/odin
 cd out/odin
-gdown https://drive.google.com/uc\?id\=15e1YEeJezpgHIQWFOIYFr_PL28rjhMPG
-unzip S24+_ONEUI9.0.zip
-rm S24+_ONEUI9.0.zip
+gdown https://drive.google.com/uc\?id\=1vmVtu542y3ORsmj_yNsWA0k2Z5x77JDI
+unzip S24+_ONEUI9_ZZHL-ZZI4_BY_@miguelbarretoo.zip
+rm S24+_ONEUI9_ZZHL-ZZI4_BY_@miguelbarretoo.zip 
 cd ../..
 
 # Initialize build enviroment
