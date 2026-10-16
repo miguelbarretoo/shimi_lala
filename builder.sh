@@ -135,7 +135,7 @@ if [[ "$IS_SAMSUNG" == true ]]; then
 
     rm -rf hardware/samsung
 
-    git clone https://github.com/LineageOS/android_hardware_samsung hardware/samsung
+    git clone https://github.com/LineageOS/android_hardware_samsung -b lineage-24.0 hardware/samsung
 
     echo "===== Syncing Samsung NFC ====="
     repo sync -f hardware/samsung/nfc
