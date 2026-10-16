@@ -94,11 +94,11 @@ else
 fi
 
 # Repo tool
-mkdir -p ~/bin
-export PATH=~/bin:$PATH
+#mkdir -p ~/bin
+#export PATH=~/bin:$PATH
 
-curl -s https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+x ~/bin/repo
+#curl -s https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+#chmod a+x ~/bin/repo
 
 # Git config
 echo "===== Configuring Git ====="
